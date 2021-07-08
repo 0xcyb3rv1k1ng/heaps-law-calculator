@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <link href="main.css" rel="stylesheet">
+<div id="container">
+    <h2>Heap's Law Calculator</h2>
+    <p><h3>Formula: M=kT<sup>b</sup></h3></p>
+    <p>
+        The variable T represents the number of tokens. 
+        <br>
+        Variables k and b are free parameters that are determined through observation. The value of k is typically between 10 and 100. The value of b is typically between 0.4 and 0.6.
+    </p>
+
+    <div id="calculator">
+    
+      <form>
+        <p><h4>Enter values for k, T, and b.</h4>
+          <p>M=<input id="k" type="text" placeholder="k" size="1">
+            <input id="T" type="text" placeholder="T" size="1">
+            <sup><input id="b" type="text" placeholder="b" size="1"></sup>  
+      </form>
+
+      <input type="button" id="calculate_button"  onClick="calculate()" value="Calculate">
+      <input type="button" id="reset_button" onclick="clearValues()" value="Reset">
+  
+    </div>
+    <!--calculator end-->
+    
+    <div id="totalResult">
+      <span id="result"></span>
+    </div>
+  
+  </div>
+  <!--container end-->
+  
+  <script type="text/javascript" src="main.js"></script>
+  </html>
